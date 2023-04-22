@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:background="@drawable/bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_spin"
+                            android:layout_width="200dp"
+                            android:layout_height="170dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/box_shadow"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/spin_to_win" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/spin_to_win"
+                                android:textColor="#ffffff"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="100dp"
+                                android:layout_height="2dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="#aa9d9d" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="@string/spin_the_lucky_wheel_to_get_free_coins"
+                                android:textColor="#ecebeb"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_daily_check"
+                            android:layout_width="200dp"
+                            android:layout_height="170dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/box_shadow"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:tint="#FFFFFF"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/daily_check" />
+
+                            <TextView
+                                android:id="@+id/wallet_text_score_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="3dp"
+                                android:text="Check Score"
+                                android:textColor="#ffffff"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="100dp"
+                                android:layout_height="2dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="#aa9d9d" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="@string/spin_the_lucky_wheel_to_get_free_coins"
+                                android:textColor="#ecebeb"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/hscrollContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_redeem"
+                            android:layout_width="200dp"
+                            android:layout_height="170dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/box_shadow"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/redeem" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="3dp"
+                                android:text="Redeem"
+                                android:textColor="#ffffff"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="100dp"
+                                android:layout_height="2dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="#aa9d9d" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="@string/redeem_earning_to_your_paytm_or_paypal"
+                                android:textColor="#ecebeb"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_rate"
+                            android:layout_width="200dp"
+                            android:layout_height="170dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/box_shadow"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/rate_us" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="3dp"
+                                android:text="Rate Now"
+                                android:textColor="#ffffff"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="100dp"
+                                android:layout_height="2dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="#aa9d9d" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="@string/share_your_experience_in_comment"
+                                android:textColor="#ecebeb"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:background="@drawable/box_shadow"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:tint="#ff0000"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/share_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:text="Share App"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="100dp"
+                            android:layout_height="2dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#aa9d9d" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="@string/share_your_experience_in_comment"
+                            android:textColor="#ecebeb"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/fb_bnr_container_toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#cbddf1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

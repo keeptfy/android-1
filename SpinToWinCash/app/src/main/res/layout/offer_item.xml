@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/offer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/offer_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/share_icon"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/offer_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Offer Title"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/offer_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Offer Description"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/offer_reward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Offer Reward"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/offer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn"
+        android:text="Get Coins"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"/>
+
+</LinearLayout>
